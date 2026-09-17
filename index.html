@@ -3,31 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aurora Maria Moreira Brandão — perfil editorial lifestyle de uma modelo virtual de 33 anos, com foco em rotina, estilo, bem-estar e fotografia.">
-  <meta name="theme-color" content="#f4efe8">
-  <meta property="og:title" content="Aurora Maria — Lifestyle">
-  <meta property="og:description" content="Uma narrativa visual sobre rotina, estilo e presença fora do universo pixel.">
+  <meta name="description" content="Aurora Maria Moreira Brandão — 33 anos. Um diário visual de lifestyle, treino, rotina e estilo fora dos pixels.">
+  <meta name="theme-color" content="#efe9df">
+  <meta property="og:title" content="Aurora Maria — Fora dos Pixels">
+  <meta property="og:description" content="Lifestyle, rotina, treino e fotografia em um diário visual editorial.">
   <meta property="og:type" content="website">
-  <title>Aurora Maria — Lifestyle</title>
+  <title>Aurora Maria — Fora dos Pixels</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="assets/images/aurora-casa.webp">
+  <link rel="preload" as="image" href="assets/images/aurora-home-close.webp" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="page-video-bg" aria-hidden="true">
+    <video id="page-background-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/images/aurora-home-close.webp" tabindex="-1">
+      <source src="assets/video/aurora-background-loop.mp4" type="video/mp4">
+      <source src="assets/video/aurora-background-loop.webm" type="video/webm">
+    </video>
+    <div class="page-video-overlay"></div>
+  </div>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="site-header" id="topo">
     <div class="container nav-wrap">
       <a class="brand" href="#topo" aria-label="Aurora Maria — início">
         <span class="brand-mark">AM</span>
-        <span class="brand-copy"><strong>Aurora Maria</strong><small>lifestyle journal</small></span>
+        <span class="brand-copy"><strong>Aurora Maria</strong><small>outside the pixels</small></span>
       </a>
       <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span></button>
       <nav class="nav" id="menu-principal" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
-        <a href="#estilo">Lifestyle</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#perfil">Perfil</a>
+        <a href="#rotina">Lifestyle</a>
+        <a href="#galeria">Fotos</a>
+        <a class="nav-18" href="#mais18">+18</a>
       </nav>
     </div>
   </header>
@@ -35,130 +42,115 @@
   <main id="conteudo">
     <section class="hero">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/aurora-casa.webp" alt="" width="941" height="1672" fetchpriority="high">
         <div class="hero-shade"></div>
       </div>
       <div class="container hero-content">
         <div class="hero-copy reveal">
-          <span class="eyebrow light">AURORA MARIA · 33 ANOS</span>
-          <h1>Uma vida que vai muito além dos pixels.</h1>
-          <p>Estilo, rotina, bem-estar e momentos simples. Um diário visual que apresenta Aurora Maria Moreira Brandão em uma narrativa lifestyle contemporânea.</p>
+          <span class="eyebrow eyebrow-light">AURORA MARIA · 33 ANOS</span>
+          <h1>Fora dos pixels,<br>do jeito dela.</h1>
+          <p>Uma coleção visual sobre rotina, movimento, estilo e aqueles registros que parecem ter sido feitos sem roteiro.</p>
           <div class="hero-actions">
-            <a class="btn btn-light" href="#galeria">Explorar fotos</a>
+            <a class="btn btn-light" href="#galeria">Ver as fotos</a>
             <a class="text-link" href="#sobre">Conhecer Aurora <span>↘</span></a>
           </div>
         </div>
-        <div class="hero-index reveal" aria-label="Informações principais">
-          <span>01</span>
-          <div><strong>Lifestyle</strong><small>rotina · estilo · movimento</small></div>
-        </div>
+        <div class="hero-stamp reveal" aria-hidden="true"><span>33</span><small>years<br>young</small></div>
       </div>
     </section>
 
-    <section id="sobre" class="section section-intro">
+    <section id="sobre" class="section intro-section">
       <div class="container intro-grid">
-        <div class="section-kicker reveal">Sobre Aurora</div>
+        <div class="section-number reveal">01 / SOBRE</div>
         <div class="intro-copy reveal">
-          <h2>Natural, confiante e com uma estética própria.</h2>
-          <p class="lead">Aurora Maria Moreira Brandão tem <strong>33 anos</strong>. Nesta apresentação editorial, sua presença é construída a partir de uma rotina equilibrada, do cuidado com a imagem e de um estilo casual que funciona tanto em casa quanto nos momentos de treino.</p>
-          <p>O foco aqui não é o universo de jogos. É a vida visual da personagem fora dos pixels: os detalhes do dia a dia, a forma de se vestir, os ambientes que frequenta e a personalidade transmitida em cada fotografia.</p>
-          <div class="signature">Aurora <span>Maria</span></div>
+          <span class="eyebrow">A VIDA ALÉM DA TELA</span>
+          <h2>Aurora Maria Moreira Brandão.</h2>
+          <p class="lead">33 anos, uma estética casual e uma rotina que mistura treino, autocuidado, fotografia e momentos simples.</p>
+          <p>No universo editorial da Aurora, a personalidade aparece mais nos detalhes do que em grandes produções: um espelho, um look confortável, uma ida à academia e a câmera sempre por perto. O resultado é um diário visual leve, confiante e contemporâneo.</p>
+          <div class="facts" role="list" aria-label="Características da Aurora">
+            <span role="listitem">Lifestyle</span><span role="listitem">Fitness</span><span role="listitem">Casual</span><span role="listitem">Fotografia</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="estilo" class="section lifestyle-section">
+    <section id="rotina" class="section routine-section">
       <div class="container">
         <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">LIFESTYLE</span>
-            <h2>Entre movimento, autocuidado e estilo.</h2>
-          </div>
-          <p>Uma narrativa visual construída com cenas cotidianas e uma estética limpa, feminina e contemporânea.</p>
+          <div><span class="section-number">02 / LIFESTYLE</span><h2>Rotina sem filtro.</h2></div>
+          <p>O cotidiano vira parte da estética: casa, academia, espelho e momentos espontâneos.</p>
         </div>
-
-        <div class="lifestyle-grid">
-          <article class="story-card story-tall reveal">
-            <img src="assets/images/aurora-academia-lateral.webp" alt="Aurora em frente ao espelho de uma academia" loading="lazy" width="941" height="1672">
-            <div class="story-overlay"><span>01</span><h3>Movimento</h3><p>Treino e bem-estar como parte da rotina.</p></div>
-          </article>
-          <article class="story-card story-wide reveal">
-            <img src="assets/images/aurora-espelho.webp" alt="Aurora fazendo uma foto em frente ao espelho" loading="lazy" width="1254" height="1254">
-            <div class="story-overlay"><span>02</span><h3>Presença</h3><p>Um visual casual com personalidade.</p></div>
-          </article>
-          <article class="quote-card reveal">
-            <span class="quote-mark">“</span>
-            <p>Elegância também está no jeito de viver o comum.</p>
-            <small>— conceito editorial Aurora Maria</small>
-          </article>
+        <div class="editorial-grid">
+          <figure class="editorial-card card-tall reveal">
+            <img src="assets/images/aurora-casa.webp" alt="Aurora fazendo uma selfie em frente ao espelho em casa" loading="lazy" width="941" height="1672">
+            <figcaption><span>Morning mood</span><strong>Em casa</strong></figcaption>
+          </figure>
+          <figure class="editorial-card card-square reveal">
+            <img src="assets/images/aurora-shopping.webp" alt="Aurora fazendo uma selfie em frente ao espelho" loading="lazy" width="1254" height="1254">
+            <figcaption><span>Everyday</span><strong>Entre um compromisso e outro</strong></figcaption>
+          </figure>
+          <div class="quote-card reveal"><span>“</span><p>A rotina também pode ter personalidade.</p><small>diário visual de Aurora</small></div>
         </div>
       </div>
     </section>
 
     <section id="galeria" class="section gallery-section">
       <div class="container">
-        <div class="section-head compact reveal">
-          <div>
-            <span class="eyebrow">DIÁRIO VISUAL</span>
-            <h2>Momentos da Aurora.</h2>
-          </div>
-          <p>Toque ou clique em uma foto para ampliar.</p>
+        <div class="section-head reveal">
+          <div><span class="section-number">03 / GALERIA</span><h2>Últimos registros.</h2></div>
+          <p>Somente as imagens em alta resolução enviadas para este projeto. Clique para abrir em tela cheia.</p>
         </div>
-
         <div class="gallery-grid" id="gallery">
-          <button class="gallery-item g1 reveal" type="button" data-full="assets/images/aurora-casa.webp" data-title="Em casa" data-caption="Um registro casual, leve e espontâneo.">
-            <img src="assets/images/aurora-casa-thumb.webp" alt="Aurora em casa diante do espelho" loading="lazy" width="520" height="680"><span>Em casa</span>
+          <button class="gallery-item g1 reveal" type="button" data-full="assets/images/aurora-home-close.webp" data-title="Em casa" data-caption="Um registro casual em frente ao espelho.">
+            <img src="assets/images/aurora-home-close.webp" alt="Aurora em casa fazendo uma selfie no espelho" loading="lazy" width="941" height="1672"><span>Em casa</span>
           </button>
-          <button class="gallery-item g2 reveal" type="button" data-full="assets/images/aurora-close.webp" data-title="Detalhes" data-caption="Retrato próximo com foco no olhar e no estilo.">
-            <img src="assets/images/aurora-close-thumb.webp" alt="Retrato de Aurora em frente ao espelho" loading="lazy" width="520" height="680"><span>Detalhes</span>
+          <button class="gallery-item g2 reveal" type="button" data-full="assets/images/aurora-shopping.webp" data-title="Espelho" data-caption="Um momento espontâneo durante o dia.">
+            <img src="assets/images/aurora-shopping.webp" alt="Aurora em frente ao espelho" loading="lazy" width="1254" height="1254"><span>Espelho</span>
           </button>
-          <button class="gallery-item g3 reveal" type="button" data-full="assets/images/aurora-academia.webp" data-title="Treino" data-caption="Uma pausa entre movimento e rotina.">
-            <img src="assets/images/aurora-academia-thumb.webp" alt="Aurora em uma academia" loading="lazy" width="520" height="680"><span>Treino</span>
+          <button class="gallery-item g3 reveal" type="button" data-full="assets/images/aurora-academia-lateral.webp" data-title="Treino" data-caption="Rotina ativa em um ambiente de academia.">
+            <img src="assets/images/aurora-academia-lateral.webp" alt="Aurora de lado em frente ao espelho de uma academia" loading="lazy" width="941" height="1672"><span>Treino</span>
           </button>
-          <button class="gallery-item g4 reveal" type="button" data-full="assets/images/aurora-closet.webp" data-title="Look do dia" data-caption="Casual, simples e com identidade.">
-            <img src="assets/images/aurora-closet-thumb.webp" alt="Aurora em frente ao espelho próximo ao closet" loading="lazy" width="520" height="680"><span>Look do dia</span>
+          <button class="gallery-item g4 reveal" type="button" data-full="assets/images/aurora-casa.webp" data-title="Casual" data-caption="Look leve e um registro sem produção exagerada.">
+            <img src="assets/images/aurora-casa.webp" alt="Aurora em um quarto fazendo selfie no espelho" loading="lazy" width="941" height="1672"><span>Casual</span>
           </button>
-          <button class="gallery-item g5 reveal" type="button" data-full="assets/images/aurora-espelho.webp" data-title="Espelho" data-caption="Um registro espontâneo em ambiente contemporâneo.">
-            <img src="assets/images/aurora-espelho-thumb.webp" alt="Aurora tirando uma selfie no espelho" loading="lazy" width="520" height="680"><span>Espelho</span>
+          <button class="gallery-item g5 reveal" type="button" data-full="assets/images/aurora-closet.webp" data-title="Closet" data-caption="Outro ângulo de um momento em casa.">
+            <img src="assets/images/aurora-closet.webp" alt="Aurora fazendo uma selfie diante do espelho próximo ao closet" loading="lazy" width="941" height="1672"><span>Closet</span>
           </button>
-          <button class="gallery-item g6 reveal" type="button" data-full="assets/images/aurora-academia-lateral.webp" data-title="Rotina ativa" data-caption="Bem-estar e movimento fazem parte da estética da personagem.">
-            <img src="assets/images/aurora-academia-lateral-thumb.webp" alt="Aurora de lado em uma academia" loading="lazy" width="520" height="680"><span>Rotina ativa</span>
-          </button>
-          <button class="gallery-item g7 reveal" type="button" data-full="assets/images/aurora-academia-corpo.webp" data-title="Academia" data-caption="Outro ângulo de um momento de treino.">
-            <img src="assets/images/aurora-academia-corpo-thumb.webp" alt="Aurora em frente ao espelho de uma academia" loading="lazy" width="520" height="680"><span>Academia</span>
+          <button class="gallery-item g6 reveal" type="button" data-full="assets/images/aurora-gym-white-top.webp" data-title="Gym day" data-caption="Treino, conforto e estilo no mesmo registro.">
+            <img src="assets/images/aurora-gym-white-top.webp" alt="Aurora em frente ao espelho de uma academia" loading="lazy" width="941" height="1672"><span>Gym day</span>
           </button>
         </div>
       </div>
     </section>
 
-    <section class="section editorial-strip">
-      <div class="container strip-grid">
-        <div class="strip-photo reveal"><img src="assets/images/aurora-close.webp" alt="Aurora em fotografia de lifestyle" loading="lazy" width="941" height="1672"></div>
-        <div class="strip-copy reveal">
-          <span class="eyebrow light">ESSÊNCIA</span>
-          <h2>Sem excessos. Sem personagem forçada.</h2>
-          <p>A proposta visual da Aurora é transmitir confiança de forma natural. A imagem trabalha uma estética clean, tons neutros, fotografia de espelho e cenas que parecem parte de um diário pessoal.</p>
-          <div class="traits" role="list" aria-label="Características da estética">
-            <span role="listitem">Casual</span><span role="listitem">Fitness</span><span role="listitem">Minimalista</span><span role="listitem">Lifestyle</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="perfil" class="section profile-section">
+    <section class="section profile-section">
       <div class="container profile-grid">
-        <div class="profile-title reveal">
-          <span class="eyebrow">PERFIL</span>
-          <h2>Aurora Maria<br>Moreira Brandão</h2>
+        <div class="profile-heading reveal">
+          <span class="section-number">04 / PERFIL</span>
+          <h2>Um pouco<br>da Aurora.</h2>
         </div>
         <div class="profile-data reveal">
           <dl>
+            <div><dt>Nome</dt><dd>Aurora Maria Moreira Brandão</dd></div>
             <div><dt>Idade</dt><dd>33 anos</dd></div>
-            <div><dt>Universo visual</dt><dd>Lifestyle · Fitness · Casual</dd></div>
-            <div><dt>Estética</dt><dd>Natural · Clean · Contemporânea</dd></div>
-            <div><dt>Formato</dt><dd>Modelo virtual / personagem editorial</dd></div>
+            <div><dt>Vibe</dt><dd>Confiante · casual · espontânea</dd></div>
+            <div><dt>Rotina</dt><dd>Treino · autocuidado · fotografia · lifestyle</dd></div>
+            <div><dt>Estilo</dt><dd>Neutro · confortável · contemporâneo</dd></div>
           </dl>
-          <p class="profile-note">Esta página apresenta uma narrativa criativa da modelo virtual Aurora Maria. Informações além das fornecidas para o projeto são tratadas como conceito editorial, não como biografia real.</p>
+          <p class="fiction-note">Perfil e biografia apresentados como universo editorial fictício da personagem.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mais18" class="section restricted-section">
+      <div class="container restricted-shell reveal">
+        <div class="restricted-topline"><span>05 / ÁREA RESTRITA</span><span class="age-badge">18+</span></div>
+        <div class="restricted-content">
+          <div class="lock-orbit" aria-hidden="true"><div class="lock-icon">🔒</div></div>
+          <span class="eyebrow eyebrow-light">CONTEÚDO PRIVADO</span>
+          <h2>Área +18</h2>
+          <p>Conteúdo reservado. Acesso somente para contas autorizadas e maiores de idade.</p>
+          <button class="btn btn-restricted" id="restricted-button" type="button">Tenho +18 — tentar acessar</button>
+          <small>spoiler: você não tem autorização 😌</small>
         </div>
       </div>
     </section>
@@ -166,20 +158,25 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div><strong>Aurora Maria</strong><span>lifestyle journal</span></div>
-      <p>33 anos · modelo virtual · apresentação editorial</p>
+      <div><strong>Aurora Maria</strong><span>outside the pixels</span></div>
+      <p>33 anos · lifestyle editorial</p>
       <a href="#topo">Voltar ao topo ↑</a>
     </div>
   </footer>
 
   <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
     <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
-    <div class="lightbox-media"><img id="lightbox-image" src="assets/images/aurora-casa.webp" alt=""></div>
-    <div class="lightbox-copy">
-      <span class="eyebrow">DIÁRIO VISUAL</span>
-      <h2 id="lightbox-title">Em casa</h2>
-      <p id="lightbox-caption">Um registro casual, leve e espontâneo.</p>
-    </div>
+    <div class="lightbox-media"><img id="lightbox-image" src="assets/images/aurora-home-close.webp" alt=""></div>
+    <div class="lightbox-copy"><span class="eyebrow eyebrow-light">DIÁRIO VISUAL</span><h2 id="lightbox-title">Em casa</h2><p id="lightbox-caption">Um registro casual em frente ao espelho.</p></div>
+  </dialog>
+
+  <dialog class="denied-modal" id="denied-modal" aria-labelledby="denied-title">
+    <button class="denied-close" type="button" aria-label="Fechar">×</button>
+    <div class="denied-icon" aria-hidden="true">⛔</div>
+    <span class="denied-code">HTTP 403 · PRIVATE AREA</span>
+    <h2 id="denied-title">ACESSO NEGADO</h2>
+    <p id="denied-message">Você é +18. O problema é que a Aurora não te deu acesso. 😂</p>
+    <button class="btn btn-dark" id="denied-ok" type="button">Tá bom, eu caí nessa</button>
   </dialog>
 
   <script src="js/script.js" defer></script>
